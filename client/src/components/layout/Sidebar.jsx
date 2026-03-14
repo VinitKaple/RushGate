@@ -30,8 +30,8 @@ const Sidebar = () => {
             />
           </div>
           <div>
-            <h1 className="text-xl font-bold text-gray-900">SkillBridge</h1>
-            <p className="text-xs text-blue-600 font-medium">Career Growth AI</p>
+            <h1 className="text-xl font-bold text-gray-900">RushGate</h1>
+            <p className="text-xs text-blue-600 font-medium">Controlling the Crowd</p>
           </div>
         </div>
 
