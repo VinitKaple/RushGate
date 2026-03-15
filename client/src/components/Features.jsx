@@ -4,6 +4,7 @@ import {
   LayoutDashboard,
   Users,
   Brain,
+  BarChart3,
   Package,
   Mail,
   ShieldCheck
@@ -14,6 +15,7 @@ const iconMap = {
   Users,
   Brain,
   Package,
+  BarChart3,
   Mail,
   ShieldCheck
 };

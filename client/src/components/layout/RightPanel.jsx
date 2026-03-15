@@ -122,7 +122,7 @@ const RightPanel = () => {
         <div className="flex items-center gap-2">
           <Sparkles size={18} className="text-indigo-600" />
           <h2 className="text-lg font-bold text-gray-800">
-            Flash‑Sale News
+           Rush-Gate News
           </h2>
         </div>
 

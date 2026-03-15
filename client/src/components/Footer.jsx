@@ -18,17 +18,17 @@ const Footer = () => {
           </div>
 
           {/* Call Us */}
-          <div className="flex items-center justify-center">
-            <Phone className="text-orange-500 w-8 h-8" />
-            <div className="ml-3">
-              <h4 className="text-white text-lg font-semibold">24x7 Banking Support</h4>
-              <span className="text-sm">
-                <a href="tel:+91-8591040081" className="text-blue-300 hover:underline">
-                  1800-123-456 (Toll Free)
-                </a>
-              </span>
-            </div>
-          </div>
+      <div className="flex items-center justify-center">
+  <Phone className="text-orange-500 w-8 h-8" />
+  <div className="ml-3">
+    <h4 className="text-white text-lg font-semibold">24x7 Platform Support</h4>
+    <span className="text-sm">
+      <a href="tel:+91-8591040081" className="text-blue-300 hover:underline">
+        1800-Flash-Drop (Support)
+      </a>
+    </span>
+  </div>
+</div>
 
           {/* Mail Us */}
           <div className="flex items-center justify-center sm:justify-end">
@@ -82,7 +82,7 @@ const Footer = () => {
    className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-sm shadow-md hover:scale-110 hover:shadow-lg transition-all duration-300"
 
   >
-    R
+    N
   </a>
 </div>
 
@@ -90,23 +90,48 @@ const Footer = () => {
         </div>
 
         {/* Services & Help */}
-        <div className="m-auto flex flex-col items-center md:items-start px-6 space-y-4">
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-1">More Services</h3>
-            <ul className="text-sm space-y-2">
-              <li><a href="/dashboard" className="text-blue-300 hover:underline">API Integration Support</a></li>
-              <li><a href="/analytics" className="text-blue-300 hover:underline">Advertising & Insights</a></li>
-              <li><a href="/compliance" className="text-blue-300 hover:underline">AI Compliance</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-2">Emergency Help</h3>
-            <ul className="text-sm space-y-1">
-              <li>Lost Card: <a href="tel:1800112211" className="text-blue-300 hover:underline">1800-11-2211</a></li>
-              <li>Fraud: <a href="tel:155260" className="text-blue-300 hover:underline">155260</a></li>
-            </ul>
-          </div>
-        </div>
+      <div className="m-auto flex flex-col items-center md:items-start px-6 space-y-4">
+
+  <div>
+    <h3 className="text-white text-lg font-semibold mb-1">Platform Services</h3>
+    <ul className="text-sm space-y-2">
+      <li>
+        <a href="/dashboard" className="text-blue-300 hover:underline">
+          Rush Gate Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="/analytics" className="text-blue-300 hover:underline">
+          Traffic & Purchase Analytics
+        </a>
+      </li>
+      <li>
+        <a href="/queue-monitor" className="text-blue-300 hover:underline">
+          Queue Monitoring System
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="text-white text-lg font-semibold mb-2">Emergency Support</h3>
+    <ul className="text-sm space-y-1">
+      <li>
+        System Outage:
+        <a href="tel:1800123456" className="text-blue-300 hover:underline">
+          1800-Flash-Help
+        </a>
+      </li>
+      <li>
+        Drop Failure:
+        <a href="tel:1800654321" className="text-blue-300 hover:underline">
+          1800-Drop-Fix
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>
 
         {/* Disclaimer */}
         <div className="flex flex-col items-center md:items-start">
@@ -122,7 +147,7 @@ During the development phase, all names, data, references, and scenarios used on
       {/* Bottom Footer */}
       <div className="bg-white py-4">
         <div className="max-w-7xl mx-auto px-4 flex justify-center items-center text-sm text-black text-center font-medium">
-          <p>© {new Date().getFullYear()} APICA – Agentic AI </p>
+          <p>© {new Date().getFullYear()} RushGate – The Smart Gate for High-Demand Drops </p>
         </div>
       </div>
     </footer>

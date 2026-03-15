@@ -10,7 +10,7 @@ const Navbar = () => {
           <img
             src="/nav.png"
             alt="Logo"
-            className="h-9 w-auto object-contain"
+            className="h-5 w-auto object-contain"
           />
         </Link>
 

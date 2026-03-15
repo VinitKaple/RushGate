@@ -11,9 +11,9 @@ import {
 const Sidebar = () => {
   // Navigation items synced with your App.jsx routes
   const menuItems = [
-    { name: "Dashboard", icon: LayoutDashboard, path: "/dashboard" },
+    { name: "Analytics", icon: LayoutDashboard, path: "/dashboard" },
    { name: "Buy product", icon: FilePlus, path: "/dashboard/engine" },
-    { name: "Monitor", icon: Settings, path: "/dashboard/setting" },
+    { name: "Dashboard", icon: Settings, path: "/dashboard/setting" },
   ];
 
   return (
@@ -69,7 +69,7 @@ const Sidebar = () => {
           <span>Log Out</span>
         </NavLink>
         <div className="border-t pt-4 text-xs text-gray-400 font-medium text-center">
-          © 2026 SKILLBRIDGE AI
+          © 2026 RushGate
         </div>
       </div>
     </div>
