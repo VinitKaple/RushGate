@@ -233,70 +233,70 @@ const Buy = () => {
         </div>
 
         {/* Fake real-time statistics panel */}
-        <div className="bg-gray-900 text-gray-100 rounded-xl p-6 shadow-2xl border border-gray-700">
-          <div className="flex items-center mb-4">
-            <div className="h-3 w-3 bg-red-500 rounded-full animate-pulse mr-2"></div>
-            <h2 className="text-xl font-bold">LIVE STOCK STATUS</h2>
-            <span className="ml-auto text-sm text-gray-400">auto-refresh</span>
-          </div>
+       <div className="bg-white text-gray-800 rounded-xl p-6 shadow-lg border border-gray-200">
+  <div className="flex items-center mb-4">
+    <div className="h-3 w-3 bg-red-500 rounded-full animate-pulse mr-2"></div>
+    <h2 className="text-xl font-bold">LIVE STOCK STATUS</h2>
+    <span className="ml-auto text-sm text-gray-500">auto-refresh</span>
+  </div>
 
-          {/* Live log feed */}
-          <div className="space-y-2 font-mono text-sm">
-            {logs.length === 0 ? (
-              <p className="text-green-400">⏳ Initializing live feed...</p>
-            ) : (
-              logs.map((log, idx) => (
-                <div
-                  key={idx}
-                  className={`border-l-4 ${
-                    log.includes("this_user")
-                      ? "border-yellow-400 bg-yellow-400/10 pl-3"
-                      : "border-red-500 pl-3"
-                  } py-1`}
-                >
-                  <span
-                    className={
-                      log.includes("this_user") ? "text-yellow-300" : "text-gray-300"
-                    }
-                  >
-                    {log}
-                  </span>
-                </div>
-              ))
-            )}
-          </div>
-
-          {/* Special rejection message for "this user" */}
-          <div className="mt-5 p-3 bg-red-900/50 border border-red-700 rounded-lg">
-            <p className="text-red-200 font-semibold flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 mr-2 text-red-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              ⚠️ You have been rejected: stock is now fully completed. Your payment could not be processed.
-            </p>
-          </div>
-
-          {/* Additional stat summary */}
-          <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
-            <div className="bg-gray-800 p-2 rounded">
-              <span className="text-gray-400">Current stock:</span>{" "}
-              <span className="text-red-400 font-bold">-2 (oversold)</span>
-            </div>
-            <div className="bg-gray-800 p-2 rounded">
-              <span className="text-gray-400">Failed orders:</span>{" "}
-              <span className="text-red-400 font-bold">1,247</span>
-            </div>
-          </div>
+  {/* Live log feed */}
+  <div className="space-y-2 font-mono text-sm">
+    {logs.length === 0 ? (
+      <p className="text-green-600">⏳ Initializing live feed...</p>
+    ) : (
+      logs.map((log, idx) => (
+        <div
+          key={idx}
+          className={`border-l-4 ${
+            log.includes("this_user")
+              ? "border-yellow-400 bg-yellow-50 pl-3"
+              : "border-red-500 pl-3"
+          } py-1`}
+        >
+          <span
+            className={
+              log.includes("this_user") ? "text-yellow-700" : "text-gray-700"
+            }
+          >
+            {log}
+          </span>
         </div>
+      ))
+    )}
+  </div>
+
+  {/* Special rejection message for "this user" */}
+  <div className="mt-5 p-3 bg-red-50 border border-red-200 rounded-lg">
+    <p className="text-red-700 font-semibold flex items-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5 mr-2 text-red-500"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+          clipRule="evenodd"
+        />
+      </svg>
+      ⚠️ You have been rejected: stock is now fully completed. Your payment could not be processed.
+    </p>
+  </div>
+
+  {/* Additional stat summary */}
+  <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
+    <div className="bg-gray-100 p-2 rounded">
+      <span className="text-gray-600">Current stock:</span>{" "}
+      <span className="text-red-600 font-bold">-2 (oversold)</span>
+    </div>
+    <div className="bg-gray-100 p-2 rounded">
+      <span className="text-gray-600">Failed orders:</span>{" "}
+      <span className="text-red-600 font-bold">1,247</span>
+    </div>
+  </div>
+</div>
 
         {/* Footnote */}
         <p className="text-xs text-gray-500 text-center mt-6">

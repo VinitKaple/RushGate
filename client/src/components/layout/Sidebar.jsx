@@ -13,7 +13,7 @@ const Sidebar = () => {
   const menuItems = [
     { name: "Dashboard", icon: LayoutDashboard, path: "/dashboard" },
    { name: "Buy product", icon: FilePlus, path: "/dashboard/engine" },
-    { name: "Settings", icon: Settings, path: "/dashboard/setting" },
+    { name: "Monitor", icon: Settings, path: "/dashboard/setting" },
   ];
 
   return (
